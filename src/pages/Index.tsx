@@ -5,6 +5,8 @@ import GridLayout from "../components/GridLayout";
 import Footer from "../components/Footer";
 import NavigationBar from "../components/NavigationBar";
 import { profileData } from "../data/profileData";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Index: React.FC = () => {
   return (
@@ -15,6 +17,13 @@ const Index: React.FC = () => {
           <ProfileHeader profile={profileData} />
           <div className="mt-8 w-full">
             <GridLayout links={profileData.links} />
+          </div>
+          <div className="mt-10">
+            <Link to="/landing">
+              <Button className="rounded-full px-8 py-2 bg-gradient-to-r from-link-purple to-link-blue hover:opacity-90">
+                Check out our landing page
+              </Button>
+            </Link>
           </div>
         </div>
         <Footer />
