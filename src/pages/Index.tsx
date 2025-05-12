@@ -16,8 +16,8 @@ const Index: React.FC = () => {
           <div className="mt-8 w-full">
             <GridLayout links={profileData.links} />
           </div>
-          <Footer />
         </div>
+        <Footer />
       </div>
     </>
   );
