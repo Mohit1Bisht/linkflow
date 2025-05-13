@@ -19,9 +19,9 @@ const Index: React.FC = () => {
             <GridLayout links={profileData.links} />
           </div>
           <div className="mt-10">
-            <Link to="/landing">
+            <Link to="/">
               <Button className="rounded-full px-8 py-2 bg-gradient-to-r from-link-purple to-link-blue hover:opacity-90">
-                Check out our landing page
+                Back to home page
               </Button>
             </Link>
           </div>

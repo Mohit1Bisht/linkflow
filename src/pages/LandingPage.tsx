@@ -14,7 +14,7 @@ const LandingPage: React.FC = () => {
     e.preventDefault();
     if (username.trim()) {
       // In a real app, this would create a new profile or check if username exists
-      navigate("/");
+      navigate("/links");
     }
   };
 
@@ -53,7 +53,7 @@ const LandingPage: React.FC = () => {
                   type="submit"
                   className="rounded-lg bg-[#d0f85c] hover:bg-[#c7ef4c] text-black font-medium px-6 py-7 text-lg"
                 >
-                  Claim your LinkFlow
+                  Create Your Digital Universe
                 </Button>
               </form>
             </div>
